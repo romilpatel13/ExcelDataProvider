@@ -31,7 +31,7 @@ import utility.TestUtil;
 		
 	
 	}
-	
+	//Read Data From Excel and Add all data through AUtomation
 	@DataProvider
 	public Iterator<Object[]> getData(){
 		ArrayList<Object[]> testData = TestUtil.getData();
