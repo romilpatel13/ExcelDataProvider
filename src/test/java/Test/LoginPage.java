@@ -1,3 +1,4 @@
+package Test;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +12,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import utility.TestUtil;
- class LoginPage {
+ public class LoginPage {
 
 	
 	WebDriver dr;
@@ -32,6 +33,9 @@ import utility.TestUtil;
 	
 	}
 	//Read Data From Excel and Add all data through AUtomation
+	
+	
+	
 	@DataProvider
 	public Iterator<Object[]> getData(){
 		ArrayList<Object[]> testData = TestUtil.getData();
@@ -52,7 +56,6 @@ import utility.TestUtil;
 	
 	
 	@AfterMethod
-	
 	public void tearDown(){
 		dr.quit();
 	}
